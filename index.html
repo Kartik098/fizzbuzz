@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FizzBuzz Game</h1>
+    <div class="container">
+        <input type="text" id="num" placeholder="Enter a number to FizzBuzz">
+        <button id="btn" onclick="rslt()">submit</button>
+
+    </div>
+    <div class="param">
+        <p id="result"></p>
+    </div>
+    <script>
+       let result = document.getElementById('result');
+function give(){
+        let num = document.getElementById('num').value
+        let x = document.getElementsByTagName("body")[0];
+        x.style.backgroundColor = "#e6e6e6";
+        for(let i = 1; i<=num; i++){
+            if(i % 3 ==0 && i % 5 == 0){
+                result.innerHTML +=("<br/> FizzBuzz");
+            }else if(i % 3 == 0){
+                result.innerHTML +=("<br/> Fizz");
+            }else if(i % 5 == 0){
+                result.innerHTML +=("<br/> Buzz");
+            }else{
+                result.innerHTML +=("<br/>" + i)
+            }
+        }
+    }
+    </script>
+</body>
+</html>
