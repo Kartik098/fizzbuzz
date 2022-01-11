@@ -10,7 +10,7 @@
     <h1>FizzBuzz Game</h1>
     <div class="container">
         <input type="text" id="num" placeholder="Enter a number to FizzBuzz">
-        <button id="btn" onclick="rslt()">submit</button>
+        <button id="btn" onclick="give()">submit</button>
 
     </div>
     <div class="param">
@@ -21,7 +21,7 @@
 function give(){
         let num = document.getElementById('num').value
         let x = document.getElementsByTagName("body")[0];
-        x.style.backgroundColor = "#e6e6e6";
+        x.style.backgroundColor = "red";
         for(let i = 1; i<=num; i++){
             if(i % 3 ==0 && i % 5 == 0){
                 result.innerHTML +=("<br/> FizzBuzz");
